@@ -16,7 +16,7 @@ test_data = pd.read_csv('../test_data.csv')
 # Predict output function
 def predict_output(features, weights):
     """
-    ===> Predict output based on features and weights
+    ===> Predict output based on features and weights <===
     """
     predictions = np.dot(features, weights)
     return predictions
@@ -24,6 +24,9 @@ def predict_output(features, weights):
 
 # Feature derivative function
 def feature_derivative(errors, features):
+    """
+    ===> Compute the derivative from a feature set and errors <===
+    """
     derivative = 2*np.dot(errors, features)
     return derivative
 
