@@ -58,4 +58,4 @@ def gradient_descent(feature_matrix, output,
 
 
 if __main__ == '__name__':
-    # Add functions to call here
+    # add function calls here.
